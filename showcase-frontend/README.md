@@ -31,7 +31,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ### HTML snippet
 ```
 <div class="row">
-<div class="players" *ngFor="let player of players">
+<div class="players" *ngFor="let player of players$ | async">
       <img [src]="player.imgURL" class="card-img-top" alt="...">
       <div class="card-body">
         <h3 class="card-title">{{ player.name }}</h3>
