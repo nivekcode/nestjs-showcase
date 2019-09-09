@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import {NavComponent} from './nav/nav.component';
 import {HttpClientModule} from '@angular/common/http';
+import {PlayersModule} from './players/players.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import {HttpClientModule} from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    PlayersModule
   ],
   providers: [],
   bootstrap: [AppComponent]
